@@ -32,6 +32,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-       <service android:name=".ExampleService" />
+       <service android:name=".ExampleService"
+           android:enabled="true"
+           android:exported="true"
+           android:foregroundServiceType="mediaProjection"/>
     </application>
 </manifest>

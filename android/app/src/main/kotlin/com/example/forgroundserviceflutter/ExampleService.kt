@@ -28,7 +28,7 @@ class ExampleService : Service() {
         serviceRunning = true
         Timer().schedule(object : TimerTask() {
             override fun run() {
-                if (serviceRunning == true) {
+                if (serviceRunning) {
                     updateNotification("I got updated!")
                 }
             }
